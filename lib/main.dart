@@ -38,7 +38,7 @@ class _MyAppState extends State<MyApp> {
                 child: Positioned(
                 bottom: 0,
                 right: 0,
-                height:300,
+                height:350,
                 width: 200,
                 child:Menu()
             )

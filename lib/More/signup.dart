@@ -1,12 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class Log extends StatefulWidget {
+class signup extends StatefulWidget {
   @override
-  _LogState createState() => _LogState();
+  _signupState createState() => _signupState();
 }
 
-class _LogState extends State<Log> {
+class _signupState extends State<signup> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -14,7 +14,7 @@ class _LogState extends State<Log> {
         appBar: AppBar(
           backgroundColor: Colors.lightBlueAccent.shade700,
           title: Center(
-            child: Text('Log in'),
+            child: Text('Registration Page'),
           ),
         ),
         body: new ListView(
@@ -26,13 +26,10 @@ class _LogState extends State<Log> {
                 Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: TextFormField(
-                    keyboardType: TextInputType.emailAddress,
+                    keyboardType: TextInputType.text,
                     decoration: InputDecoration(
-                        prefixIcon: Icon(
-                          Icons.email,
-                          color: Colors.lightBlueAccent,
-                        ),
-                        labelText: 'E-mail'),
+                      prefixIcon: Icon(Icons.account_circle,color: Colors.lightBlueAccent,),
+                        labelText: 'First Name'),
                   ),
                 ),
                 Padding(
@@ -40,23 +37,41 @@ class _LogState extends State<Log> {
                   child: TextFormField(
                     keyboardType: TextInputType.text,
                     decoration: InputDecoration(
-                      prefixIcon: Icon(
-                        Icons.lock,
-                        color: Colors.lightBlueAccent,
-                      ),
-                      labelText: 'Password',
+                        prefixIcon: Icon(Icons.account_circle,color: Colors.lightBlueAccent,),
+                      labelText: 'LAst name'
+                    ),
+
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: TextFormField(
+                    keyboardType: TextInputType.emailAddress,
+                    decoration: InputDecoration(
+                        prefixIcon: Icon(Icons.email,color: Colors.lightBlueAccent,),
+                        labelText: 'Email'
                     ),
                   ),
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    FlatButton(
-                      onPressed: () {},
-                      child: Text("Forgot Password"),
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: TextFormField(
+                    keyboardType: TextInputType.text,
+                    decoration: InputDecoration(
+                        prefixIcon: Icon(Icons.email,color: Colors.lightBlueAccent,),
+                        labelText: 'Password'
                     ),
-                  ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: TextFormField(
+                    keyboardType: TextInputType.emailAddress,
+                    decoration: InputDecoration(
+                        prefixIcon: Icon(Icons.email,color: Colors.lightBlueAccent,),
+                        labelText: 'Confirm Password'
+                    ),
+                  ),
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -73,7 +88,7 @@ class _LogState extends State<Log> {
                         ),
                         onPressed: () {},
                         child: Text(
-                          "Login",
+                          "signup",
                           style: TextStyle(
                             color: Colors.white,
                             letterSpacing: 1.5,
