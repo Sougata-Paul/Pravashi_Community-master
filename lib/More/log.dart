@@ -7,7 +7,7 @@ class Log extends StatefulWidget {
 }
 
 class _LogState extends State<Log> {
-  @override
+  String email,password;
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
@@ -27,6 +27,10 @@ class _LogState extends State<Log> {
                   padding: const EdgeInsets.all(10.0),
                   child: TextFormField(
                     keyboardType: TextInputType.emailAddress,
+                    onChanged: (value){
+                      //set any value
+                      email=value;
+                    },
                     decoration: InputDecoration(
                         prefixIcon: Icon(
                           Icons.email,
@@ -38,7 +42,12 @@ class _LogState extends State<Log> {
                 Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: TextFormField(
+                    obscureText: true,
                     keyboardType: TextInputType.text,
+                    onChanged:(value) {
+                      //set input value
+                      password=value;
+                    },
                     decoration: InputDecoration(
                       prefixIcon: Icon(
                         Icons.lock,
@@ -71,7 +80,10 @@ class _LogState extends State<Log> {
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30.0),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          print(email);
+                          print(password);
+                        },
                         child: Text(
                           "Login",
                           style: TextStyle(
