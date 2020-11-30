@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "32640060069",
+    "firebase_url": "https://probasee-community.firebaseio.com",
+    "project_id": "probasee-community",
+    "storage_bucket": "probasee-community.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32640060069:android:e8e65717d53c28e19b5b4c",
+        "android_client_info": {
+          "package_name": "com.example.pravashi_community"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "32640060069-81k1dlv6hsrenbeho20hvtdoalovu7mu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNagcXJX2_U22dACOvWRXs3FbUv_V8suo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "32640060069-81k1dlv6hsrenbeho20hvtdoalovu7mu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
