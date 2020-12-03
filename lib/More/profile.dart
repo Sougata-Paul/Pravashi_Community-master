@@ -8,6 +8,7 @@ class profile extends StatefulWidget {
 
 class _ProfileState extends State<profile> {
   @override
+  // final _auth=FirebaseAuth.instance;
   Widget build(BuildContext context) {
     return
       MaterialApp(
